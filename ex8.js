@@ -1,10 +1,8 @@
-let total = 0;
-let moedas = 0;
+let num = 1;
+let cubo = Math.pow (num, 3);
 
-while(total < 12){
-    moedas++;
-    total += 3;
-    console.log('Passo', moedas, ': Total = ', total);
+while(cubo <= 100){
+    console.log('O cubo de', num, 'é', cubo);
+    num++;
+    cubo = Math.pow(num, 3);
 }
-
-console.log('Total de moedas necessárias :' , moedas);
